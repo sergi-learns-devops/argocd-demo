@@ -1,7 +1,7 @@
 apiVersion: apps/v1 # i se Usa apps/v1beta2 para versiones anteriores a 1.9.0
 kind: Deployment
 metadata:
-  name: nginx-d
+  name: nginx-sserra
   labels:
     estado: "1"
 spec:
