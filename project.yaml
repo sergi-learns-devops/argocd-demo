@@ -13,6 +13,6 @@ spec:
     - https://github.com/sergi-learns-devops/argocd-demo.git
   
   destinations:
-  - namespace: argocd-demo
+  - namespace: demo-argocd
     server: https://kubernetes.default.svc
     name: in-cluster
