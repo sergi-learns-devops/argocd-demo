@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject #Especifico que quiero crear un proyecto en Argo CD
+metadata:
+  name: my-argocd-project #Nombre del proyecto en ArgoCD
+  namespace: argocd #Namespace de ArgoCD
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+
+spec:
+  description: My own ArgoCD project
+
+  sourceRepos:
+    - https://github.com/sergi-learns-devops/argocd-demo.git
+  
+  destination:
+  - namespace: argocd-demo
+    server: https://kubernetes.default.svc
+    name: in-cluster
