@@ -8,7 +8,7 @@ spec:
   selector:   #permite seleccionar un conjunto de objetos que cumplan las condicione
     matchLabels:
       app: nginx
-  replicas: 10 # indica al controlador que ejecute 2 pods
+  replicas: 3 # indica al controlador que ejecute 2 pods
   strategy:
      type: RollingUpdate
   template:   # Plantilla que define los containers
